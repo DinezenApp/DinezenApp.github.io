@@ -1,3 +1,44 @@
 <html>
-<p>This website is currently under construction.</p>
+  <head>
+    <meta charset="utf-8">
+    <title>Dinezen</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <script>
+      function postSubmitAction() {
+          // window.location='thank_you.html';
+          $("#interest-form").remove();
+          $("#thank-you").show();
+      }
+    </script>
+    <script type="text/javascript">var submitted=false;</script>
+
+    <iframe name="hidden_iframe" id="hidden_iframe"	style="display:none;" onload="if(submitted)	{postSubmitAction();}"></iframe>
+    <form id="interest-form" action="https://docs.google.com/forms/d/e/1FAIpQLSddij9TeJBH-z56QsDdeAym7CHlms9V1oJkZEuH4cOZWI96_A/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" name="interest form">
+      <div class="header">
+         <p>Sign Up For Beta</p>
+      </div>
+      <div class="description">
+        <p>Once our app is up and running, you'll be first to find out so that you can actually use it!</p>
+      </div>
+      <div class="input">
+        <input type="text" name="entry.2072316545" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM" required>
+        <input type="submit" class="button" id="submit" value="SIGN ME UP">
+      </div>
+    </form>
+
+    <div id="thank-you" class="block" hidden>
+      <div class="header">
+         <p>Thank You for Signing Up!</p>
+      </div>
+      <div class="description">
+        <p>We would love to hear any thoughts you have on our mobile app solution, nutrition, your university's dining halls, or anything else! Shoot us an email at DinezenApp@gmail.com or contact us through <a href="http://facebook.com/DinezenApp" style="text-decoration:none;">Facebook</a>!</p>
+      </div>
+    </div>
+
+  </body>
 </html>
