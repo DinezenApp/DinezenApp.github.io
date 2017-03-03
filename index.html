@@ -30,9 +30,6 @@
     <!-- Form CSS -->
     <link href="css/form.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/custom.css" rel="stylesheet">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -127,11 +124,16 @@
                       <h2 class="section-heading" >Pre-Register for Dinezen!</h2>
                       <p>Once our app is up and running, you'll be first to find out.</p>
 
-                      <div class="input block">
+                      <div class="input block" id="email-desktop-input">
                         <input type="text" name="entry.2072316545" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM" required>
-                        <input type="submit" class="button email-button" id="email-submit" value="SIGN ME UP">
-                        <input type="submit" class="button email-button" id="mobile-email-submit" value=">" hidden><!--<i class="fa fa-arrow-right"></i>-->
+                        <input type="submit" class="button email-button" id="desktop-email-submit" value="SIGN ME UP">
                       </div>
+
+                      <div class="input block" id="email-mobile-input" hidden>
+                        <input type="text" name="entry.2072316545" class="button" id="email-mobile" name="email" placeholder="NAME@EXAMPLE.COM" required>
+                        <input type="submit" class="button" id="desktop-email-submit" value="SIGN ME UP">
+                      </div>
+
                     </form>
 
                     <div id="thank-you" hidden>
