@@ -2,12 +2,12 @@
   #tagline {
     font-size: 35px;
   }
-
+/*
   #email-submit {
     display: none;
   }
 
   #mobile-email-submit {
-    display: inline;
-  }
+    display: inherit;
+  }*/
 }
