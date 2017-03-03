@@ -1,56 +1,242 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Dinezen</title>
-    <link rel="shortcut icon" href="http://DinezenApp.github.io/favicon.ico" type="image/x-icon" >
-    <link rel="stylesheet" href="style.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <script>
-      function postSubmitAction() {
-          // window.location='thank_you.html';
-          $("#interest-form").remove();
-          $("#thank-you").show();
-      }
-    </script>
-    <script type="text/javascript">var submitted=false;</script>
 
-    <iframe name="hidden_iframe" id="hidden_iframe"	style="display:none;" onload="if(submitted)	{postSubmitAction();}"></iframe>
-    <form id="interest-form" action="https://docs.google.com/forms/d/e/1FAIpQLSddij9TeJBH-z56QsDdeAym7CHlms9V1oJkZEuH4cOZWI96_A/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" name="interest form">
-      <div class="header">
-         <p>Sign Up For Beta</p>
-      </div>
-      <div class="description">
-        <p>Once our app is up and running, you'll be first to find out so that you can actually use it!</p>
-      </div>
-      <div class="input">
-        <input type="text" name="entry.2072316545" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM" required>
-        <input type="submit" class="button" id="submit" value="SIGN ME UP">
-      </div>
-    </form>
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <div id="thank-you" class="block" hidden>
-      <div class="header">
-         <p>Thank You for Signing Up!</p>
-      </div>
-      <div class="description">
-        <p>We would love to hear any thoughts you have on our mobile app solution, nutrition, your university's dining halls, or anything else! Shoot us an email at DinezenApp@gmail.com or contact us through <a href="http://facebook.com/DinezenApp" style="text-decoration:none;">Facebook</a>!</p>
-      </div>
-    </div>
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-  </body>
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
 
-    ga('create', 'UA-92988412-1', 'auto');
-    ga('send', 'pageview');
+    <!-- Form CSS -->
+    <link href="css/form.css" rel="stylesheet">
 
-  </script>
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Dinezen</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#pre-register">Pre-register</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h1>Dinezen curates personalized meal recommendations based on your dietary targets and restrictions.</h1>
+                            <a href="#pre-register" class="btn btn-outline btn-xl page-scroll">Pre-Register Now for Free!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="img/Dinezen Mockup (Login Screen).jpg" class="img-responsive" alt="">
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="pre-register" class="download bg-primary text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <!-- <div class="badges">
+                        <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+                        <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+                    </div> -->
+
+
+                    <script>
+                      function postSubmitAction() {
+                          // window.location='thank_you.html';
+                          $("#interest-form").remove();
+                          $("#thank-you").show();
+                      }
+                    </script>
+                    <script type="text/javascript">var submitted=false;</script>
+
+                    <iframe name="hidden_iframe" id="hidden_iframe"	style="display:none;" onload="if(submitted)	{postSubmitAction();}"></iframe>
+                    <form id="interest-form" action="https://docs.google.com/forms/d/e/1FAIpQLSddij9TeJBH-z56QsDdeAym7CHlms9V1oJkZEuH4cOZWI96_A/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" name="interest form">
+                      <h2 class="section-heading" >Pre-Register for Dinezen!</h2>
+                      <p>Once our app is up and running, you'll be first to find out.</p>
+
+                      <div class="input block">
+                        <input type="text" name="entry.2072316545" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM" required>
+                        <input type="submit" class="button email-button" id="email-submit" value="SIGN ME UP">
+                        <button type="submit" class="button email-button" id="mobile-email-submit" hidden><i class="fa fa-arrow-right"></i></button>
+                      </div>
+                    </form>
+
+                    <div id="thank-you" hidden>
+                      <h2 class="section-heading">Thank You for Signing Up!</h2>
+                      <p>We would love to hear any thoughts you have on our mobile app solution, nutrition, your university's dining halls, or anything else! Shoot us an email at <a href="mailto:DinezenApp@gmail.com">DinezenApp@gmail.com</a> or contact us through <a href="http://facebook.com/DinezenApp" style="text-decoration:none;">Facebook</a>!</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2 ">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="img/Dinezen Mockup (Menu Plans Screen).jpg" class="img-responsive" alt=""> </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-10 col-sm-12">
+                                <h2 id="tagline">Making good nutrition easy, fun, and attainable</h2>
+                                <p class="text-muted">Our Smart Dining meal recommendation software allows you to input your desired calories and dietary targets such as high protein or vegetarian diets. Dinezen then provides fantastic meal options with these criteria in mind, making good nutrition quick, easy, and attainable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- <section class="cta">
+        <div class="cta-content">
+            <div class="container">
+                <h2>Stop waiting.<br>Start building.</h2>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section> -->
+
+    <section id="contact" class="contact bg-primary">
+        <div class="container">
+            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+            <ul class="list-inline list-social">
+                <li class="social-facebook">
+                    <a href="http://facebook.com/DinezenApp"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="social-twitter">
+                    <a href="mailto:DinezenApp@gmail.com"><i class="fa fa-envelope"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Dinezen. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <!-- <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li> -->
+            </ul>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+
+</body>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92988412-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 </html>

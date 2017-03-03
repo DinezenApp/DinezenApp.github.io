@@ -1,0 +1,13 @@
+@media(max-width:800px) {
+  #tagline {
+    font-size: 35px;
+  }
+
+  #email-submit {
+    display: none;
+  }
+
+  #mobile-email-submit {
+    display: inline;
+  }
+}
