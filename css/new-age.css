@@ -159,6 +159,19 @@ header {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
+#university-header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  overflow-y: hidden;
+  background: url("../img/bg-pattern.png"), #EDAE49;
+  /* fallback for old browsers */
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #BC0022, #EDAE49);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #BC0022, #EDAE49);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
 header .header-content {
   text-align: center;
   padding: 150px 0 50px;
@@ -396,6 +409,11 @@ footer ul li a.active {
   background: #fdcc52;
   background: -webkit-linear-gradient(#fdcc52, #fdc539);
   background: linear-gradient(#fdcc52, #fdc539);
+}
+#pre-register-university {
+    background: #BC0022;
+    background: -webkit-linear-gradient(#BC0022, #BC0022);
+    background: linear-gradient(#BC0022, #BC0022);
 }
 .text-primary {
   color: #fdcc52;

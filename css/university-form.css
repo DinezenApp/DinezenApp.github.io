@@ -1,0 +1,93 @@
+.block {
+  width: 450px;
+  margin: auto;
+}
+
+#email-desktop-input {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .block {
+    width: 90%;
+  }
+
+  #tagline {
+    font-size: 35px;
+  }
+
+  #email-desktop-input {
+    display: none;
+  }
+
+  #desktop-email-submit {
+    margin-top: 15px;
+    width: 75%;
+    height: 46px;
+    background: #EDAE49;
+    font-family: inherit;
+    font-weight: bold;
+    color: inherit;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+  }
+
+  #email-mobile-input {
+    display: block;
+  }
+}
+
+.button {
+  height: 44px;
+  border: none;
+}
+
+#email {
+  width: 75%;
+  background: #FDFCFB;
+  font-family: inherit;
+  color: #737373;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px 0 0 5px;
+}
+
+#email-mobile {
+  width: 100%;
+  background: #FDFCFB;
+  font-family: inherit;
+  color: #737373;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px;
+}
+
+
+
+.email-button {
+  width: 25%;
+  height: 46px;
+  background: #EDAE49;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  letter-spacing: 1px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+}
+
+
+#submit:hover {
+  background: #660000;
+}
+
+
+input:focus {
+  outline: none;
+  outline: 2px solid #EDAE49;
+  box-shadow: 0 0 2px #EDAE49;
+}

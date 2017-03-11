@@ -1,0 +1,40 @@
+@media (min-width: 768px) {
+
+    #for-universities {
+        margin: 10px 0px;
+        padding: 5px 15px;
+        background-color: #BC0022;
+    }
+
+    #for-universities:hover {
+        background-color: #EDAE49;
+        color: white;
+    }
+
+    #for-students {
+        margin: 10px 0px;
+        padding: 5px 15px;
+        background-color: #EDAE49;
+    }
+
+    #for-students:hover {
+        background-color: #BC0022;
+        color: white;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #for-universities {
+        border: none;
+        border-radius: 0px;
+        text-align: left;
+    }
+    #for-students {
+        border: none;
+        border-radius: 0px;
+        text-align: left;
+    }
+
+}

@@ -12,7 +12,7 @@
     <meta property="og:title" content="Dinezen: Personalized Meal Plan Curation"/>
     <meta property="og:site_name" content="Dinezen"/>
     <meta property="og:url" content="http://dinezen.com"/>
-    <meta property="og:description" content="Dinezen is a mobile app that curates personalized meal recommendations based on your dietary targets and restrictions. Our solution links up with UMD Dining Halls to provide nutritional info and recommendations based on what's being served for each meal." />
+    <meta property="og:description" content="Dinezen is a mobile app that curates personalized meal recommendations for students at university dining halls. Our solution links up with UMD Dining Halls to provide nutritional info and recommendations based on what's being served for each meal." />
     <meta property="og:image" content="http://dinezen.com/img/dinezen-sq-logo.jpg"/>
     <meta property="og:image:url" content="http://dinezen.com/img/dinezen-sq-logo.jpg"/>
 
@@ -39,7 +39,7 @@
     <link href="css/new-age.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/form.css" rel="stylesheet">
+    <link href="css/university-form.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
 
@@ -68,7 +68,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#pre-register">Pre-register</a>
+                        <a class="page-scroll" href="#pre-register-university">University Interest</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#features">Features</a>
@@ -78,7 +78,7 @@
                     </li>
 
                     <li>
-                        <a id="for-universities" class="navbar-swap-view btn btn-outline btn-sm" href="university.html">For Universities</a>
+                        <a id="for-students" class="navbar-swap-view btn btn-outline btn-sm" href="index.html">For Students</a>
                     </li>
                 </ul>
             </div>
@@ -87,14 +87,14 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
+    <header id="university-header">
         <div class="container">
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-sm-7" style="padding-left: 30px;">
                     <div class="header-content">
                         <div class="header-content-inner">
-                            <h1>Dinezen curates personalized meal recommendations based on your dietary targets and restrictions.</h1>
-                            <a href="#pre-register" class="btn btn-outline btn-xl page-scroll">Pre-Register Now for Free!</a>
+                            <h1>Dinezen gives your students a fun and simple way to eat nutritious meals at your university dining halls.</h1>
+                            <a href="#pre-register-university" class="btn btn-outline btn-xl page-scroll">My school is interested!</a>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/Dinezen Mockup (Login Screen) v2.jpg" class="img-responsive" alt="">
+                                    <img src="img/Dinezen Mockup (Smart Dining Preferences Screen) v2.jpg" class="img-responsive" alt="">
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -117,7 +117,7 @@
         </div>
     </header>
 
-    <section id="pre-register" class="download bg-primary text-center">
+    <section id="pre-register-university" class="download bg-primary text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -138,24 +138,24 @@
 
                     <iframe name="hidden_iframe" id="hidden_iframe"	style="display:none;" onload="if(submitted)	{postSubmitAction();}"></iframe>
                     <form id="interest-form" action="https://docs.google.com/forms/d/e/1FAIpQLSddij9TeJBH-z56QsDdeAym7CHlms9V1oJkZEuH4cOZWI96_A/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" name="interest form">
-                      <h2 class="section-heading" >Pre-Register for Dinezen!</h2>
-                      <p>Once our app is up and running, you'll be first to find out.</p>
+                      <h2 class="section-heading" >My school may be interested in Dinezen!</h2>
+                      <p>Great! We'll contact you with more information!</p>
 
                       <div class="input block" id="email-desktop-input">
-                        <input type="text" name="entry.2072316545" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
+                        <input type="text" name="entry.1171955124" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
                         <input type="submit" class="button email-button" id="desktop-email-submit" value="SIGN ME UP">
                       </div>
 
                       <div class="input block" id="email-mobile-input" hidden>
-                        <input type="text" name="entry.1773326781" class="button" id="email-mobile" name="email" placeholder="NAME@EXAMPLE.COM">
+                        <input type="text" name="entry.1730474354" class="button" id="email-mobile" name="email" placeholder="NAME@EXAMPLE.COM">
                         <input type="submit" class="button" id="desktop-email-submit" value="SIGN ME UP">
                       </div>
 
                     </form>
 
                     <div id="thank-you" hidden>
-                      <h2 class="section-heading">Thank You for Signing Up!</h2>
-                      <p>We would love to hear any thoughts you have on our mobile app solution, nutrition, your university's dining halls, or anything else! Shoot us an email at <a href="mailto:DinezenApp@gmail.com">DinezenApp@gmail.com</a> or contact us through <a href="http://facebook.com/DinezenApp" style="text-decoration:none;">Facebook</a>!</p>
+                      <h2 class="section-heading">Thank You for your Interest!</h2>
+                      <p>We would love to hear any thoughts you have on our mobile app solution, nutrition, your university's dining halls, or anything else! Shoot us an email at <a href="mailto:DinezenApp@gmail.com" style="color: #EDAE49">DinezenApp@gmail.com</a> or contact us through <a href="http://facebook.com/DinezenApp" style="text-decoration:none; color: #EDAE49">Facebook</a>!</p>
                     </div>
 
                 </div>
@@ -184,8 +184,9 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-10 col-sm-12">
-                                <h2 id="tagline">Making good nutrition easy, fun, and attainable</h2>
-                                <p class="text-muted">Our Smart Dining meal recommendation software allows you to <b>input your desired calories and dietary targets</b> such as high protein or vegetarian diets. Dinezen then provides a list of <b>fantastic meal options</b> with these criteria in mind, making good nutrition quick, easy, and attainable.</p>
+                                <h2 id="tagline">Showing off the nutritious meals available to your students</h2>
+                                <p class="text-muted">We provide <b>custom API creation</b> based on your dining hall's nutritional data. This API is connected with our proprietary algorithm and mobile application to curate <b>fantastic meal options</b> based on students' desired calories and dietary targets such as high protein or vegetarian diets.</p>
+                                <p class="text-muted">Show your students that they can easily find <b>healthy and balanced meal options</b> at your dining halls.</p>
                             </div>
                         </div>
                     </div>
@@ -202,7 +203,7 @@
         <div class="overlay"></div>
     </section>
 
-    <section id="contact" class="contact bg-primary">
+    <section id="contact-university" class="contact bg-primary">
         <div class="container">
             <h2>We <i class="fa fa-heart"></i> new friends!</h2>
             <ul class="list-inline list-social">
